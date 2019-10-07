@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A basic calculator</title>
+	</head>
+	<body>
+			<h1> A Basic Computer</h1>
+			<div id="fullname"> 
+				<label id="fname-label"> First Name</label> <br>
+				<input type="text" pattern="[A-Za-z]" id="first-name"> <br>
+				<label id="lname-label">Last Name</label> <br>
+				<input type="text" pattern="[A-Za-z]" id="last-name"><br>
+			</div> <br> <br>
+
+			<div id="number"> 
+				<label> First Number</label> <br>
+				<input type="text" id="1"><br>
+				<label >Second Number</label>  <br>
+				<input type="text" id="2"><br>
+			</div>
+				
+			<p id="result"></p>
+
+			<div id="keyboard">
+				<input class="operator" id="plus-id" type="button" onclick="sum()"  value="+" />
+				<input class="operator" id="minus-id" type="button" onclick="minus()" value="-"/>
+				<input class="operator" id="divide-id" type="button" onclick="div()"  value="/"/>
+				<input class="operator" id="*multiply-id" type="button" onclick="multi()"  value="*"/>
+				<input class="operator" id="modulus-id" type="button" onclick="modulus()" value="%"/>
+				<input class="operator" id="clear-id" type="button" onclick="clearFields()" value="C"/>
+					
+			</div>
+			<script src="script.js"></script>
+	</body>
+</html>
